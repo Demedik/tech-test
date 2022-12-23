@@ -1,0 +1,19 @@
+
+<form class="to-do-form" [formGroup]="taskForm" (ngSubmit)="onSubmit(taskForm)">
+    <mat-form-field class="example-full-width">
+        <mat-label>Label</mat-label>
+        <input matInput placeholder="Enter label" formControlName="label">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Category</mat-label>
+        <input matInput placeholder="Enter category" formControlName="category">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Description</mat-label>
+        <textarea class="to-do-form__description" matInput placeholder="Enter description" formControlName="description"></textarea>
+    </mat-form-field>
+    <div>
+        <button mat-button color="basic">Close</button>
+        <button mat-button color="primary" type="submit">Submit</button>
+    </div>
+</form>

@@ -1,0 +1,11 @@
+:host {
+    .to-do-form {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+
+        &__description {
+            min-height: 100px;
+        }
+    }
+}

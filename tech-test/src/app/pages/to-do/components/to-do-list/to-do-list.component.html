@@ -1,0 +1,20 @@
+<mat-expansion-panel color="basic" *ngFor="let task of tasks$ | async | filterTask: searchStr">
+    <mat-expansion-panel-header [ngClass]="{'done': task.done}">
+        <mat-panel-title>
+            <div class="to-do-list__item" >
+                <div class="to-do-list__item-label-wrapper" >
+                    <div>{{ task.label }}</div>
+                    <div class="to-do-list__item-category-wrapper">
+                        <div class="to-do-list__item-category" [style]="{'background-color': defineColorOfCategory(task.category)}" >{{ task.category }}</div>
+                    </div>
+                </div>
+                <div class="to-do-list__item-button-wrapper" (click)="preventOpening($event)">
+                    <button *ngIf="!task.done" mat-raised-button color="primary" (click)="onComplete(task)">Complete task</button>
+                    <button *ngIf="!task.done" mat-raised-button color="primary" (click)="onEdit(task)">Edit</button>
+                    <button mat-raised-button color="warn" (click)="onRemove(task)">Remove</button>
+                </div>
+            </div>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>{{ task.description }}</p>
+</mat-expansion-panel>

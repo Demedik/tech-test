@@ -3,16 +3,23 @@
     {
       "id": 1,
       "label": "Kitchen Cleanup",
-      "description":  "Clean my dirty kitchen",
+      "description": "Clean my dirty kitchen",
       "category": "house",
-      "done": false
+      "done": "22-00-2022"
     },
     {
       "id": 2,
       "label": "Taxes",
-      "description":  "Start doing my taxes and contact my accountant jhon for advice",
+      "description": "Start doing my taxes and contact my accountant jhon for advice",
       "category": "bureaucracy",
-      "done": "22-10-2019"
+      "done": "22-00-2022"
+    },
+    {
+      "id": 6,
+      "label": "Buy something new",
+      "description": "Buy something in the house",
+      "category": "shop",
+      "done": false
     }
   ]
 }

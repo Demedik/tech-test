@@ -1,0 +1,10 @@
+<div>
+    <div class="to-do__panel">
+        <mat-form-field class="example-full-width">
+            <mat-label>Search</mat-label>
+            <input matInput placeholder="By label and category" [(ngModel)]="searchStr" (focus)="searchStr = ''">
+        </mat-form-field>
+        <button mat-button color="primary" (click)="createTask()">Create task</button>
+    </div>
+    <app-to-do-list [searchStr]="searchStr"></app-to-do-list>
+</div>

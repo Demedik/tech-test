@@ -1,0 +1,47 @@
+.to-do-list {
+    &__item {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        &-category {
+            padding: 5px 10px;
+            border-radius: 20px;
+            border: 1px solid #000;
+
+            &-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 30%;
+            }
+        }
+
+        &-label-wrapper {
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-button-wrapper {
+            button {
+                margin: 0 5px;
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+.done {
+    background-color: #0000001f;
+
+    &:hover.mat-expansion-panel-header.mat-expanded, &:focus.mat-expansion-panel-header.mat-expanded {
+        background: rgba(0,0,0,.04);
+    } 
+}

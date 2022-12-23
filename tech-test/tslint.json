@@ -6,6 +6,10 @@
     "deprecation": {
       "severity": "warning"
     },
+    "no-implicit-dependencies": [
+      true,
+      "@store"
+    ],
     "component-class-suffix": true,
     "contextual-lifecycle": true,
     "directive-class-suffix": true,
